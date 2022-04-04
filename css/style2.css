@@ -1,0 +1,40 @@
+body{
+  background-color:Tomato;
+  text-align:center;
+}
+
+h1{
+  color: hsl(264, 58%, 71%);
+  background-color: #8A2BE2;
+  padding:15px;
+}
+
+h2{
+  color: hsl(264, 58%, 71%);
+  background-color:  #8A2BE2;
+  padding:15px;
+}
+
+h3{
+  color: rgb(75, 0, 130);
+}
+
+h4{
+  color: hsl(264, 58%, 71%);
+  background-color:  #8A2BE2;
+  padding:15px;
+}
+
+p{
+  color: hsl(264, 58%, 71%);
+  background-color: #8A2BE2; 
+}
+
+div{
+  color:RGB(51, 0, 131);
+}
+
+input{
+  color: hsl(264, 58%, 71%);
+  background-color: #8A2BE2;
+}

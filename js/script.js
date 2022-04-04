@@ -16,7 +16,7 @@ function calculate () {
   const cm = (2.54 * inches)
 
   // output
-  document.getElementById('cm').innerHTML = 'Your height in cm is: ' + cm.toFixed(2) + ' cm'
+  document.getElementById('cm').innerHTML = 'Your height in cm is: ' + cm.toFixed(2) + ' cm '
 }
 
 // button

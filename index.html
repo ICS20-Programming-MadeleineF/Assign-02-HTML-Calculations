@@ -24,6 +24,7 @@
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <!-- JS link -->
     <script src="./js/script.js"></script>
+    <!-- header -->
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
@@ -35,7 +36,8 @@
         <table>
           <tr>
             <th>
-              <img src="./images/Inches_in_Feet.png" alt="Inches_in_Feet" width="75%" height="auto"/>
+              <!-- image -->
+              <img src="./images/Inches_in_Feet.png" alt="Inches_in_Feet" width="80%" height="auto"/>
             </th>
             <th>
               <h2>Formulas</h2>
@@ -44,21 +46,16 @@
           </tr>
         </table>
         <h4>1 foot make 12 inches</h4>    
-        <!-- Numeric Textfield -->
-        <form action="#">
-          <p>Insert how tall are you in inches to find out your height in cm:</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="text"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              id="inches-to-cm"
-            />
-            <label class="mdl-textfield__label" for="inches-to-cm">inches ...</label>
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
-        </form>
-				
+
+								<!-- Numeric Textfield with Floating Label -->
+<form action="#">
+  <p>Insert how tall are you in inches to find out your height in cm:</p>
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="inches-to-cm">
+    <label class="mdl-textfield__label" for="inches-to-cm">inches...</label>
+    <span class="mdl-textfield__error">Input is not a number!</span>
+  </div>
+</form>
         <!-- Raised button with ripple -->
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"

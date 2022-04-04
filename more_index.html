@@ -24,6 +24,7 @@
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <!-- JS link -->
     <script src="./js/more_script.js"></script>
+    <!-- Header -->
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
@@ -35,6 +36,7 @@
         <table>
           <tr>
             <th>
+              <!-- image -->
               <img src="./images/botton_of_shoe%20(1).png" alt="bottom-of-shoe" width="75%" height="auto"/>
             </th>
             <th>
@@ -43,21 +45,16 @@
             </th>
           </tr>
         </table>
-        <!-- Numeric Textfield -->
-        <form action="#">
-          <p>Insert how big your shoes are you in cm to find out their length in feet:</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="text"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              id="cm-to-feet"
-            />
-            <label class="mdl-textfield__label" for="cm-to-feet">cm ...</label>
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
-        </form>
-				
+        <h4>Use a ruler to measure your shoe</h4> 
+				<!-- Numeric Textfield with Floating Label -->
+<form action="#">
+  <p>Insert how big your shoes are you in cm to find out their length in feet:</p>
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="cm-to-feet">
+    <label class="mdl-textfield__label" for="cm-to-feet">cm...</label>
+    <span class="mdl-textfield__error">Input is not a number!</span>
+  </div>
+</form>
         <!-- Raised button with ripple -->
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
