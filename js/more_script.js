@@ -6,7 +6,7 @@
 
 'use strict'
 /**
- * This function calculates area and perimeter of triangle.
+ * This function calculates cm to feet
  */
 function calculate () {
   // input
