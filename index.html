@@ -34,26 +34,26 @@
         <table>
           <tr>
             <th>
-              <img src="./images/IN_and_CM.png" alt="In_and_Cm" width="25%" height="auto"/>
+              <img src="./images/Inches_in_Feet.png" alt="Inches_in_Feet" width="75%" height="auto"/>
             </th>
             <th>
               <h2>Formulas</h2>
-              <h3>A = (B x H)</h3>
+              <h3>cm = Inches x 2.54</h3>
             </th>
           </tr>
         </table>
-              
+        <h4>1 foot make 12 inches</h4>      
         <!-- Numeric Textfield -->
         <form action="#">
-          <p>Height</p>
+          <p>Insert how tall are you in inches to find out your height in cm:</p>
           <div class="mdl-textfield mdl-js-textfield">
             <input
               class="mdl-textfield__input"
               type="text"
               pattern="-?[0-9]*(\.[0-9]+)?"
-              id="height-of-triangle"
+              id="inches-to-cm"
             />
-            <label class="mdl-textfield__label" for="height-of-triangle">height ...</label>
+            <label class="mdl-textfield__label" for="inches-to-cm">inches ...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form>
@@ -69,9 +69,21 @@
         <p>
           <div id="answers">
             <div id="cm"></div>
-            <div id="perimeter"></div>
           </div>
-        </p>
+      <!-- Raised button with ripple -->
+        <button
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          onclick="myButtonClicked()"
+        >
+          Click After Calculation
+        </button>
+      <!-- Primary-colored flat button -->
+<button class="mdl-button mdl-js-button mdl-button--primary"
+  onclick=secondPage()>
+  Second Page
+</button>
+
+         </p>
       </main>
     </div>
   </body>

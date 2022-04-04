@@ -10,11 +10,20 @@
  */
 function calculate () {
   // input
-  const height = parseFloat(document.getElementById('height-of-triangle').value)
+  const inches = parseFloat(document.getElementById('inches-to-cm').value)
 
   // process
-  const area = (2.54 * height)
+  const cm = (2.54 * inches)
 
   // output
-  document.getElementById('cm').innerHTML = 'Area is: ' + area + ' cm'
+  document.getElementById('cm').innerHTML = 'Your height in cm is: ' + cm.toFixed(2) + ' cm'
+}
+
+// button
+function myButtonClicked() {
+        alert("You're short")
+}
+// button
+function secondPage() {
+  window.location='https://assign-02-html-calculations.madeleineforger.repl.co/more_index.html';
 }
